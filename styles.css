@@ -9,23 +9,41 @@
     --lexend-font: font-family: 'Lexend Deca', sans-serif;
 }
 
-/* CSS Variable example:
-
-    body {
-        color: var(--my-color);
-    }
-*/
-
 body {
     font-size: 0.938rem;
-	background-color: red;
+	background-color: var(--very-dark-blue);
 }
 
-img {
+.container {
+    margin: 5.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--dark-saturated-blue);
+    overflow: hidden;
+}
+
+.container > img {
     max-width: 100%;
 }
 
+h1 {
+    color: var(--white)
+}
+.accent {
+    color: var(--soft-violet);
+}
+.mainParagraph {
+    color: var(--slightly-transparent-white-1);
+}
+
+.stats {
+    color: var(--white);
+}
+.stat-headings {
+    color: var(--slightly-transparent-white-2);
+}
+
 .attribution {
+    color: var(--slightly-transparent-white-2);
     font-size: 11px;
     text-align: center;
 }
