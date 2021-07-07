@@ -1,0 +1,41 @@
+:root {
+	--very-dark-blue: hsl(233, 47%, 7%);
+	--dark-saturated-blue: hsl(244, 38%, 16%);
+	--soft-violet: hsl(277, 64%, 61%);
+	--white: hsl(0, 0%, 100%);
+	--slightly-transparent-white-1: hsla(0, 0%, 100%, 0.75);
+	--slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);
+    --inter-font: font-family: 'Inter', sans-serif;
+    --lexend-font: font-family: 'Lexend Deca', sans-serif;
+}
+
+/* CSS Variable example:
+
+    body {
+        color: var(--my-color);
+    }
+*/
+
+body {
+    font-size: 0.938rem;
+	background-color: red;
+}
+
+img {
+    max-width: 100%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 375px) {
+	body {
+		background-color: blue;
+	}
+}
+
