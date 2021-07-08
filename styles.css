@@ -92,8 +92,29 @@ h2 {
 	color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 375px) {
-	body {
-		background-color: blue;
+@media screen and (min-width: 376px) {
+	.card-container {
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 7.813rem 7.375rem;
+	}
+
+	.image-container {
+		background-image: url(./images/image-header-desktop.jpg);
+		width: 55%;
+		height: auto;
+	}
+
+	.card-content {
+		padding: 3.438rem 5.8rem 3.438rem 3.125rem;
+		width: 45%;
+		text-align: left;
+	}
+
+	.card-stats {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 2rem;
 	}
 }
