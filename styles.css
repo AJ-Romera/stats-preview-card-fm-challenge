@@ -5,50 +5,91 @@
 	--white: hsl(0, 0%, 100%);
 	--slightly-transparent-white-1: hsla(0, 0%, 100%, 0.75);
 	--slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);
-    --inter-font: font-family: 'Inter', sans-serif;
-    --lexend-font: font-family: 'Lexend Deca', sans-serif;
+	--inter-font: 'Inter', sans-serif;
+	--lexend-font: 'Lexend Deca', sans-serif;
 }
 
 body {
-    font-size: 0.938rem;
+	font-size: 0.938rem;
 	background-color: var(--very-dark-blue);
 }
 
-.container {
-    margin: 5.5rem 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--dark-saturated-blue);
-    overflow: hidden;
+.card-container {
+	margin: 5.5rem 1rem;
+	border-radius: 0.5rem;
+	background-color: var(--dark-saturated-blue);
+	overflow: hidden;
 }
 
-.container > img {
-    max-width: 100%;
+.image-container {
+	position: relative;
+	background-image: url(./images/image-header-mobile.jpg);
+	width: 100%;
+	height: 15.5rem;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 95%;
+}
+.layer {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--soft-violet);
+	mix-blend-mode: multiply;
+	opacity: 96%;
+}
+
+.card-content {
+	padding: 1rem 1.4rem;
+	text-align: center;
 }
 
 h1 {
-    color: var(--white)
+	color: var(--white);
+	font-family: var(--inter-font);
+	font-weight: 700;
 }
 .accent {
-    color: var(--soft-violet);
+	color: var(--soft-violet);
 }
-.mainParagraph {
-    color: var(--slightly-transparent-white-1);
+.main-paragraph {
+	color: var(--slightly-transparent-white-2);
+	font-family: var(--inter-font);
+	font-weight: 400;
+	line-height: 1.5rem;
+	margin-bottom: 2rem;
 }
 
+h2 {
+	line-height: 0.25rem;
+}
+
+.card-stats {
+	display: flex;
+	flex-direction: column;
+}
 .stats {
-    color: var(--white);
+	color: var(--white);
+	font-family: var(--inter-font);
+	font-weight: 700;
 }
 .stat-headings {
-    color: var(--slightly-transparent-white-2);
+	color: var(--slightly-transparent-white-2);
+	font-family: var(--lexend-font);
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
 }
 
 .attribution {
-    color: var(--slightly-transparent-white-2);
-    font-size: 11px;
-    text-align: center;
+	color: var(--slightly-transparent-white-2);
+	font-size: 11px;
+	text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+	color: hsl(228, 45%, 44%);
 }
 
 @media screen and (min-width: 375px) {
@@ -56,4 +97,3 @@ h1 {
 		background-color: blue;
 	}
 }
-
