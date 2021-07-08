@@ -23,7 +23,7 @@ It consists on building out a card component and get it looking as close to the 
 
 ### Demo
 
--   Under construction...
+-   [Demo Web Preview](https://stats-preview-card-fm-challenge.netlify.app/)
 
 ## My process
 

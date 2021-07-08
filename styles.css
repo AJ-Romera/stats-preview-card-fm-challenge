@@ -92,7 +92,10 @@ h2 {
 	color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 376px) {
+/* The Challenge Provide a Breakpoint at 375px for mobile
+I prefer 768 and below for mobile-tablet and above for desktop
+I can add more precise breakpoints but this is just a practice */
+@media screen and (min-width: 768px) {
 	.card-container {
 		display: flex;
 		flex-direction: row-reverse;
